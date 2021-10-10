@@ -1,86 +1,82 @@
-body{
-    cursor:all-scroll;
+body {
+    cursor: all-scroll;
     margin: 0;
     margin-top: 0;
     position: relative;
     margin-right: 0%;
     background-color: aliceblue;
-    
 }
 
-#header{
+#header {
     position: relative;
     margin-top: 0%;
-    background-color:azure;
+    background-color: azure;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     width: 100%;
     padding-top: 100px;
 }
 
-.tclouds{
-    display:flex;
-    cursor:crosshair;
+.tclouds {
+    display: flex;
+    cursor: crosshair;
     right: 15%;
     position: absolute;
-    top: 60px;;
-    
+    top: 60px;
+    ;
 }
-h1{
+
+h1 {
     position: relative;
     text-align: center;
-    font-weight:bolder ;
+    font-weight: bolder;
     margin: auto;
     width: 100%;
     font-size: 150px;
-    font-family:'Allison', cursive;
-
+    font-family: 'Allison', cursive;
 }
-h3{
 
+h3 {
     margin: auto;
     text-align: center;
     width: 100%;
-    font-family:Arial, Helvetica, sans-serif italic;
+    font-family: Arial, Helvetica, sans-serif italic;
     font-style: italic;
-    font-size: 80px ;
+    font-size: 80px;
     position: relative;
-   
 }
 
-.mountain{
-   display: flex;
+.mountain {
+    display: flex;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    cursor:crosshair;
+    cursor: crosshair;
 }
-.bclouds{
-    position:relative;
+
+.bclouds {
+    position: relative;
     display: flex;
-    cursor:crosshair;
-    margin-left:5%;
+    cursor: crosshair;
+    margin-left: 5%;
     margin-right: auto;
 }
-#intro{
+
+#intro {
     width: 50%;
     margin: 20% auto;
     border-top: 5px solid #1C6EA4;
     border-radius: 15%;
     border-bottom: 10px solid #1C6EA4;
-    cursor:auto;
-   
+    cursor: auto;
 }
 
-.about{
-   
+.about {
     width: 100%;
-    text-decoration:dashed underline;
+    text-decoration: dashed underline;
     text-align: center;
     color: rgb(92, 233, 92);
-    font-size:80px;
-    
-
+    font-size: 80px;
 }
 
 .img1 {
@@ -92,52 +88,53 @@ h3{
     border-radius: 50%;
     border-color: white;
 }
-.write{
-    padding:35%;
+
+.write {
+    padding: 35%;
     padding-top: 0%;
     padding-bottom: 10%;
     width: 60%;
     margin: auto;
-    text-align:left;
+    text-align: left;
     font-size: 34px;
-    
-    
 }
-#intro a{
-    cursor:help;
-    color:darkgoldenrod;
+
+#intro a {
+    cursor: help;
+    color: darkgoldenrod;
     text-decoration: none;
     font-style: italic;
 }
-#intro a:hover{
+
+#intro a:hover {
     text-decoration: cadetblue underline;
-    
 }
 
-#skills{
+#skills {
     width: 50%;
     margin: auto;
-    border-radius:5%;
+    border-radius: 5%;
     border-bottom: 15px solid #1C6EA4;
-    cursor:auto;
+    cursor: auto;
     position: relative;
 }
-h2{
+
+h2 {
     width: 100%;
-    text-decoration:dashed underline;
+    text-decoration: dashed underline;
     text-align: center;
     color: rgb(92, 233, 92);
-    font-size:80px;
-
+    font-size: 80px;
 }
-.skill1{
+
+.skill1 {
     width: 80%;
-    font-size:40px;
+    font-size: 40px;
     position: relative;
     text-align: left;
-    
 }
-.img2{
+
+.img2 {
     padding: 5%;
     width: 20%;
     top: 0%;
@@ -145,11 +142,88 @@ h2{
     float: right;
     height: 100px;
     position: relative;
-    
 }
 
-#footer{
+#footer {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10%;
     background-color: aqua;
 }
+
+/* dark mode code */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* toggle code start */
+
+.switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* toggle code end */
